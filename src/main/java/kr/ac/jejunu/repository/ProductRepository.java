@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ProductRepository {
 	public List<Product> findAll();
+
+	public void insert();
 }

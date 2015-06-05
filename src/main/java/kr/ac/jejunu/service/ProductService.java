@@ -7,4 +7,6 @@ import kr.ac.jejunu.model.Product;
 public interface ProductService {
 	
 	List<Product> list();
+
+	void save(Product product);
 }
