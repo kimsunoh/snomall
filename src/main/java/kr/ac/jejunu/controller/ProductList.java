@@ -15,8 +15,8 @@ public class ProductList {
 
 	@Autowired
 	private ProductService productService;
-	@RequestMapping
 	
+	@RequestMapping
 	public List<Product> List() {
 		return productService.list();
 	}

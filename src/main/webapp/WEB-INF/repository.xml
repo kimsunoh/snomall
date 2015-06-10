@@ -10,7 +10,7 @@
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource" >
 		<property name="driverClass" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost/jeju?characterEncoding=utf-8" />
-		<property name="username" value="root" />
+		<property name="username" value="jeju" />
 		<property name="password" value="1234" />
 	</bean>
 
@@ -21,7 +21,7 @@
 	</bean>
 
 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="kr.ac.jejunu.Repository" />
+		<property name="basePackage" value="kr.ac.jejunu.repository" />
 		<property name="annotationClass" value="org.springframework.stereotype.Repository" />
 	</bean>
 
