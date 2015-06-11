@@ -23,5 +23,4 @@ public class ProductServiceImpl implements ProductService{
 	public void save(Product product) {
 		productRepository.insert(product);
 	}
-
 }
