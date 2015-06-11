@@ -9,4 +9,5 @@ public interface ProductService {
 	List<Product> list();
 
 	void save(Product product);
+
 }

@@ -6,17 +6,16 @@ import kr.ac.jejunu.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/save")
-public class ProductSave {
-	
+@RequestMapping(value="/productAdd", method={RequestMethod.GET})
+public class ProductAdd {
 	@Autowired
 	private ProductService productService;
 	
 	@RequestMapping
-	public String save(Product product) {
+	public void save(Product product) {
 		productService.save(product);
-		return "redirect:list";
 	}
 }
