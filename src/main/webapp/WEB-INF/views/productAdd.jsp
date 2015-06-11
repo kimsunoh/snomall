@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div id="Content">
-		<form action="save" method="post">
+		<form action="add" method="post">
 			<fieldset>
 				<legend> 상품등록 </legend>
 				<p>
@@ -34,9 +34,7 @@
 					<label>상세설명</label> <input type="text" name="productDetail" />
 				</p>
 				<p>
-					<a href="list">
-						<input type="submit" value="상품등록" >
-					</a>
+					<input type="submit" value="상품등록">
 				</p>
 			</fieldset>
 		</form>
