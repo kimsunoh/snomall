@@ -14,11 +14,11 @@
 			<fieldset>
 				<legend>상품 정보</legend>
 				<p>
-					<a href="list.jeju"><input type="button" value="상품 리스트" />
-					<a href="productResetup.jeju?id=${product.id}" />
+					<a href="list.jeju"><input type="button" value="상품 리스트" /></a>
+					<a href="productResetup.jeju?id=${product.id}">
 						<input type="button" value="수정" />
 					</a>
-					<a href="productDelete.jeju?id=${product.id}" />
+					<a href="productDelete.jeju?id=${product.id}">
 						<input type="button" value="삭제" />
 					</a>
 				</p>

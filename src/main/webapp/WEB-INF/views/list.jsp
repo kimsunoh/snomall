@@ -21,7 +21,7 @@
 		<a href="productAdd.jeju">상품등록</a>
 	</div>
 	<div id="content">
-		<table class="table" id="list_item">
+		<table class="table">
 			<caption >쇼핑몰</caption>
 			<tr>
 				<th>상품명</th>

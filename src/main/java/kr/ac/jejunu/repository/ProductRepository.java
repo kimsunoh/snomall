@@ -16,4 +16,6 @@ public interface ProductRepository {
 	public Product select(int id);
 
 	public void update(Product product);
+
+	public void delete(int id);
 }

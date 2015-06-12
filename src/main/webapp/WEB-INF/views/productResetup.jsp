@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id="Content">
-		<form method="post" action="resetup">
+		<form method="post" action="/resetup">
 			<fieldset>
 				<legend>상품 수정 정보</legend>
 				<p>

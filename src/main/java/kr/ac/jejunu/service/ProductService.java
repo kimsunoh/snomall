@@ -13,4 +13,6 @@ public interface ProductService {
 	Product detail(int id);
 
 	void resetup(Product product);
+
+	void delete(int id);
 }

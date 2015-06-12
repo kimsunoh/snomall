@@ -10,20 +10,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/productResetup")
+@RequestMapping
 public class ProductResetup {
 	@Autowired
 	private ProductService productService;
 	
-	@RequestMapping
+	@RequestMapping("/productResetup")
 	public Product productReroad(@RequestParam("id") int id) {
 		return productService.detail(id);
 	}
 	
-	@RequestMapping
-	public String resetup(Product product) {
+	@RequestMapping("/resetup")
+	public String resetup(@ModelAttribute Product product) {
 		productService.resetup(product);
-		return "redirect:list";
+		return "redirect:list.jeju";
 	}
-
 }
