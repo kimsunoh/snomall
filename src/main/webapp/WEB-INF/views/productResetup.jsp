@@ -9,6 +9,9 @@
 	width : 60%;
 	margin: 0 auto;
 }
+.hidden {
+	visibility : hidden;
+}
 </style>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -46,6 +49,9 @@
 				<p>
 					<label>상품상세설명</label>
 					<textarea name="productDetail" class="form-control">${product.productDetail}</textarea>
+				</p>
+				<p>
+						<input type="text" name="id" class="form-control hidden" value="${product.id}" />
 				</p>
 					<input type="submit" class="btn btn-default" value="수정" />
 			</fieldset>

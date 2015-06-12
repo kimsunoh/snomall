@@ -15,7 +15,7 @@ public class ProductDetail {
 	private ProductService productService;
 	
 	@RequestMapping
-	public Product detail(@RequestParam("id") int id) {
-		return productService.detail(id);
+	public Product detail(Product product) {
+		return productService.detail(product.id);
 	}
 }
