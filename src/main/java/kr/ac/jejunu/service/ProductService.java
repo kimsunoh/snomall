@@ -9,4 +9,8 @@ public interface ProductService {
 	List<Product> list();
 
 	void save(Product product);
+
+	Product detail(int id);
+
+	void resetup(Product product);
 }

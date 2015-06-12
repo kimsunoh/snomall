@@ -24,4 +24,14 @@ public class ProductServiceImpl implements ProductService{
 		productRepository.insert(product);
 	}
 
+	@Override
+	public Product detail(int id) {
+		return productRepository.select(id);
+	}
+
+	@Override
+	public void resetup(Product product) {
+		productRepository.update(product);
+	}
+
 }

@@ -12,4 +12,8 @@ public interface ProductRepository {
 	public List<Product> findAll();
 
 	public void insert(Product product);
+
+	public Product select(int id);
+
+	public void update(Product product);
 }
