@@ -29,14 +29,15 @@ public class ProductServiceImpl implements ProductService{
 		return productRepository.select(id);
 	}
 
-	@Override
-	public void resetup(Product product) {
-		productRepository.update(product);
-	}
 
 	@Override
 	public void delete(int id) {
 		productRepository.delete(id);
+	}
+
+	@Override
+	public void update(Product product) {
+		productRepository.update(product);
 	}
 
 }

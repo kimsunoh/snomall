@@ -4,6 +4,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<style>
+.main {
+	width : 60%;
+	margin: 0 auto;
+}
+</style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Product add</title>
 <link rel="stylesheet"
@@ -17,25 +23,26 @@
 <script src="http://code.jquery.com/jquery.js"></script>
 </head>
 <body>
-	<div id="Content">
-		<form action="add" method="post">
+	<div id="Content" class="main">
+		<form action="add" method="post" class="form-horizontal">
 			<fieldset>
 				<legend> 상품등록 </legend>
-				<p>
-					<label>상품명</label> <input type="text" name="title" />
-				</p>
-				<p>
-					<label>가격</label> <input type="text" name="price" />
-				</p>
-				<p>
-					<label>판매자</label> <input type="text" name="provider" />
-				</p>
-				<p>
-					<label>상세설명</label> <input type="text" name="productDetail" />
-				</p>
-				<p>
-					<input type="submit" value="상품등록">
-				</p>
+				<div class="form-group">
+					<label>상품명</label> <input class="form-control" type="text" name="title" />
+				</div>
+				<div class="form-group">
+					<label>가격</label> <input class="form-control" type="text" name="price" />
+				</div>
+				<div class="form-group">
+					<label>판매자</label> <input class="form-control" type="text" name="provider" />
+				</div>
+				<div class="form-group">
+					<label>상세설명</label>
+					<textarea class="form-control" rows="3" name="productDetail"></textarea>
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btn btn-default"value="상품등록">
+				</div>
 			</fieldset>
 		</form>
 	</div>
